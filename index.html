@@ -14,6 +14,10 @@
             <div class="control-panel box">
                 <div class="property-group">
                     <div class="controls-filed">
+                        <label for="blockSize">Размер блока</label>
+                        <input type="range" id="blockSize" min="50" max="200" step="10" value="50">
+                    </div>
+                    <div class="controls-filed">
                         <label for="flexDirection">flex-direction</label>
                         <select name="flexDirection" id="flexDirection">
                             <option value="row">row (по умолчанию)</option>
@@ -64,30 +68,31 @@
                     <div class="controls-filed">
                         <label for="order">order</label>
                         <select name="order" id="order">
-                            <option value="zero">0 по (умолчанию)</option>
-                            <option value="minus">-1</option>
-                            <option value="plus">+1</option>
+                            <option value="0">0 по (умолчанию)</option>
+                            <option value="-1">-1</option>
+                            <option value="1">+1</option>
                         </select>
                     </div>
                     <div class="controls-filed">
                         <label for="flexGrow">flex-grow</label>
                         <select name="flexGrow" id="flexGrow">
-                            <option value="zero">0 по (умолчанию)</option>
-                            <option value="plus">1</option>
+                            <option value="0">0 по (умолчанию)</option>
+                            <option value="1">1</option>
                         </select>
                     </div>
                     <div class="controls-filed">
                         <label for="flexShrink">flex-shrink</label>
                         <select name="flexShrink" id="flexShrink">
-                            <option value="zero">0 по (умолчанию)</option>
-                            <option value="plus">1</option>
+                            <option value="1">1 по (умолчанию)</option>
+                            <option value="0">0</option>
                         </select>
                     </div>
                     <div class="controls-filed">
                         <label for="flexBasis">flex-basis</label>
                         <select name="flexBasis" id="flexBasis">
-                            <option value="content">content (умолчанию)</option>
-                            <option value="half">50%</option>
+                            <option value="auto">auto (по умолчанию)</option>
+                            <option value="content">content </option>
+                            <option value="50%">50%</option>
                         </select>
                     </div>
                 </div>
